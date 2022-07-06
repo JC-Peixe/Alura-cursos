@@ -81,12 +81,12 @@ h2{
     height: 60px;
     text-align: center;
     padding-top: 17px;
-    background: linear-gradient(rgb(180, 252, 159), white);
+    background: linear-gradient(rgb(180, 252, 159), rgb(255, 255, 255)); 
     margin: 0 auto;
     font-weight: bold;
     font-size: 40px;
     font-style: normal;
-    border-radius: 15px;
+    border-radius: 0 0 15px 15px;
     color: #565656;
     font-family: 'Roboto', sans-serif;
 }
