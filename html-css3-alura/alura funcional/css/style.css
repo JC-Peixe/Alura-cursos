@@ -86,7 +86,7 @@ nav a {
 #avaliacao:hover{
     transform: scale(1.2);
     transition: .3s;
-    background: #a186b3;
+    background: #84afff;
 }
 .produtos h2{
     font-size: 30px;
