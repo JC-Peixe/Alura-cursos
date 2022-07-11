@@ -1,6 +1,6 @@
 *{
     max-width: 100%;
-    margin: auto;
+    
 }
 header{
     background: linear-gradient(#BBBBBB, #ffffff) ;
@@ -49,6 +49,7 @@ nav a {
 .titulo-principal{
     padding-left: 20px;
 }
+
 h2{
     width: 100%;
     height: 60px;
@@ -62,6 +63,18 @@ h2{
     border-radius: 0 0 15px 15px;
     color: #565656;
     font-family: 'Roboto', sans-serif;
+}
+.apresentacao{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    top: 50%;
+    text-transform: uppercase;
+    padding: 3%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
 }
 .peixepersonal{
     max-width: 100%;
@@ -241,7 +254,7 @@ footer{
     margin-top: 20px;
 }
 main{
-    width: 1280px;
+    width: 100%;
     margin: 0 auto;
 }
 form{

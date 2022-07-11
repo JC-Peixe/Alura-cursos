@@ -30,7 +30,7 @@ nav li{
     display: inline-flex;
     margin: 0 0 0 15px;
 }
-.icon li a:hover{
+nav a:hover{
     transform: scale(1.1);
     transition: .2s;
     background: rgb(136, 240, 158);
