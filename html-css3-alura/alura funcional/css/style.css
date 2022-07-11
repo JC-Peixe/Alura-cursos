@@ -224,25 +224,6 @@ h3{
     font-weight: bold;
     margin-top: 10px;
 }
-@media (max-width: 800px){
-    .pps{
-        display: none;
-    }
-    .caixa{
-      
-        text-align: center;
-        font-size: 100%;
-        vertical-align: top;
-        width: 100%;
-        height: 150px;
-        margin: auto;
-    }
-   
-    .produtos li{
-        margin-top: 0%;
-        width: 100%;
-    }
-}
 footer{
     text-align: center;
     background: url("../imagens/logof.png");
@@ -326,4 +307,30 @@ td, .th{
 }
 td{
     text-align: center;
+}
+@media (max-width: 800px){
+    .pps{
+        display: none;
+    }
+    .caixa{
+        display: none;
+        text-align: center;
+        font-size: 100%;
+        vertical-align: top;
+        width: 100%;
+    }
+    .peixepersonal, .textokinesis{
+        width: 100%;
+        margin: 1%;
+    }
+    .inicio{
+        display: none;
+    }
+    #personal{
+        margin-top: 25%;
+    }
+    .produtos li{
+        margin-top: 0%;
+        width: 100%;
+    }
 }
