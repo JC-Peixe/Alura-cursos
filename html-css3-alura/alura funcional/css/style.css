@@ -55,7 +55,7 @@ h2{
     height: 60px;
     text-align: center;
     padding-top: 17px;
-    background: linear-gradient(rgb(180, 252, 159), rgb(255, 255, 255)); 
+    background: linear-gradient(#b4fc9f, rgb(255, 255, 255)); 
     margin: 0 auto;
     font-weight: bold;
     font-size: 40px;
