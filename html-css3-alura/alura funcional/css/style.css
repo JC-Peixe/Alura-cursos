@@ -58,41 +58,52 @@ h2{
     background: linear-gradient(#b4fc9f, rgb(255, 255, 255)); 
     margin: 0 auto;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2em;
     font-style: normal;
     border-radius: 0 0 15px 15px;
     color: #565656;
     font-family: 'Roboto', sans-serif;
 }
+
 .apresentacao{
     position: relative;
     display: inline-flex;
-    align-items: center;
-    top: 50%;
     text-transform: uppercase;
     padding: 3%;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.peixepersonal{
-    max-width: 100%;
+.peixepersonal {
+    position: relative;
     display: inline-flex;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0 0 1em;
     box-shadow:  5px 5px 20px #888888;
     border: 1px solid black;
     border-radius: 15px;
-    
+    text-align: center;
+    vertical-align: top;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.peixepersonal li{
+    position: relative;
+    display: flex;
+    text-align: justify;
+    font-size: 3em;
+    padding: 3%;
+    margin:0 10px 0 10px ;
+    align-items: center;
 }
 .kinesisfuncional{
-    
     max-width: 100%;
     display: inline-flex;
     margin: 0 auto;
     box-shadow:  5px 5px 20px #888888;
     border: 1px solid black;
     border-radius: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #folder1{
     width: 35%;
@@ -111,7 +122,6 @@ h2{
     text-align: center;
     padding: 1%;
 }
-
 em strong{
     color: red;
     font-weight: bold;
@@ -134,9 +144,9 @@ em strong{
 }
 .beneficios {
     background: #ffffff;
-    padding: 10px;
     font-size: 20px;
-    margin: 5% 0;
+    margin: 1% 0;
+    border-radius: 15px 15px 0 0;
 }
 h3{
     text-align: center;
@@ -308,9 +318,60 @@ td, .th{
 td{
     text-align: center;
 }
+@media (max-width: 1200px){
+    .peixepersonal li{
+        position: relative;
+        display: flex;
+        text-align: justify;
+        font-size: 2.3em;
+        padding: 3%;
+        margin:0 10px 0 10px ;
+        align-items: center;
+    } 
+    .peixepersonal, .kinesisfuncional{
+        max-width: 100%;
+        display: inline-flex;
+        margin: 0 0 1em;
+        box-shadow:  5px 5px 20px #888888;
+        border: 1px solid black;
+        border-radius: 15px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+@media (max-width: 1000px){
+    .peixepersonal {
+    position: relative;
+    display: inline-flex;
+    max-width: 100%;
+    box-shadow:  5px 5px 20px #888888;
+    margin: 0 0 1em;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .peixepersonal li{
+    position: relative;
+    display: flex;
+    text-align: justify;
+    font-size: 2em;
+    padding: 3%;
+    margin:0 10px 0 10px ;
+    align-items: center;
+    }
+    .peixepersonal, .kinesisfuncional{
+        max-width: 100%;
+        display: inline-flex;
+        margin: 0 0 1em;
+        box-shadow:  5px 5px 20px #888888;
+        border: 1px solid black;
+        border-radius: 15px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
 @media (max-width: 800px){
     .pps{
-        display: none;
+        display: flex;
+        width: 20%;
     }
     .caixa{
         display: none;
@@ -321,11 +382,48 @@ td{
     }
     .peixepersonal, .textokinesis{
         width: 100%;
-        margin: 1%;
+        align-items: center;
+    }
+    .peixepersonal li, .textokinesis{
+        padding: 1%;
+        font-size: 1em;
+        font-weight: bold;
     }
     .inicio{
-        display: none;
+        display: flex;
     }
+    #personal{
+        margin-top: 25%;
+    }
+    .produtos li{
+        margin-top: 0%;
+        width: 100%;
+    }
+}
+@media (max-width: 620px){
+    .pps{
+        display: flex;
+        width: 20%;
+    }
+    .caixa{
+        display: none;
+        text-align: center;
+        font-size: 100%;
+        vertical-align: top;
+        width: 100%;
+    }
+    .peixepersonal, .textokinesis{
+        width: 100%;
+        display: flex;
+        
+    }
+    .peixepersonal li, .textokinesis{
+        padding: 1%;
+        font-size: 0.8em;
+        font-weight: bold;
+        align-items: center;
+    }
+  
     #personal{
         margin-top: 25%;
     }
