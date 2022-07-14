@@ -31,13 +31,6 @@ nav li{
     display: inline-flex;
     margin: 0 0 0 15px;
 }
-
-nav a:hover{
-    transform: scale(1.1);
-    transition: .2s;
-    background: rgb(136, 240, 158);
-}
-
 nav a {
     text-transform: uppercase;
     color: #000000;
@@ -45,7 +38,11 @@ nav a {
     font-size: 22px;
     text-decoration: none;
 }
-
+nav a:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    background: rgb(136, 240, 158);
+}
 .titulo-principal{
     padding-left: 20px;
 }
@@ -62,7 +59,6 @@ nav a {
     color: #000000;
     font-family: 'Roboto', sans-serif;
 }
-
 h2{
     width: 100%;
     height: 60px;
@@ -77,8 +73,6 @@ h2{
     color: #565656;
     font-family: 'Roboto', sans-serif;
 }
-
-
 .apresentacao{
     position: relative;
     display: inline-flex;
@@ -92,23 +86,23 @@ h2{
 .peixepersonal {
     position: relative;
     display: inline-flex;
+    align-items: center;
     max-width: 100%;
     margin: 0 0 1em;
     box-shadow:  5px 5px 20px #888888;
     border: 1px solid black;
     border-radius: 15px;
-    text-align: center;
-    vertical-align: top;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .peixepersonal li{
+    width: 95%;
     position: relative;
     display: flex;
     text-align: justify;
-    font-size: 3em;
-    padding: 3%;
+    font-size: 2.3em;
+    font-weight: bold;
+    padding: 2% ;
     margin:0 10px 0 10px ;
-    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .kinesisfuncional{
     max-width: 100%;
@@ -119,12 +113,12 @@ h2{
     border-radius: 15px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-#folder1{
+.peixefoto{
     width: 35%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
-#folder2{
+.kinesisfoto{
     width: 60%;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
@@ -145,7 +139,7 @@ em strong{
     padding: 0 1%;
     width: 40%;
     display: inline-flex;
-    font-size: 30px;
+    font-size: 2em;
     text-align: center;
     align-items: center;
     vertical-align: top;
@@ -161,6 +155,12 @@ em strong{
     font-size: 20px;
     margin: 1% 0;
     border-radius: 15px 15px 0 0;
+}
+.beneficios h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    background: none;
+    color: #000;
 }
 h3{
     text-align: center;
@@ -331,18 +331,18 @@ td, .th{
 td{
     text-align: center;
 }
-@media (max-width: 1200px){
+@media (max-width: 1400px){
     .peixepersonal li{
-        position: relative;
-        display: flex;
-        text-align: justify;
-        font-size: 2.3em;
-        padding: 3%;
-        margin:0 10px 0 10px ;
-        align-items: center;
-    } 
+        font-size: 1.85em;
+    }
+    .textokinesis{
+        font-size: 1.8em;
+    }
+}
+@media (max-width: 1200px){
     .peixepersonal, .kinesisfuncional{
         max-width: 100%;
+        position: relative;
         display: inline-flex;
         margin: 0 0 1em;
         box-shadow:  5px 5px 20px #888888;
@@ -350,35 +350,43 @@ td{
         border-radius: 15px;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
+    .peixepersonal li{
+        position: relative;
+        display: flex;
+        text-align: justify;
+        font-size: 1.7em;
+        padding: 2%;
+        margin:0 10px 0 10px ;
+        align-items: center;
+    } 
+    
+    .textokinesis {
+        font-size: 1.5em;
+    }
 }
 @media (max-width: 1000px){
-    .peixepersonal {
-    position: relative;
-    display: inline-flex;
-    max-width: 100%;
-    box-shadow:  5px 5px 20px #888888;
-    margin: 0 0 1em;
-    border: 1px solid black;
-    border-radius: 15px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
     .peixepersonal li{
     position: relative;
     display: flex;
     text-align: justify;
-    font-size: 2em;
-    padding: 3%;
+    font-size: 1.4em;
+    padding: 2%;
     margin:0 10px 0 10px ;
     align-items: center;
     }
     .peixepersonal, .kinesisfuncional{
         max-width: 100%;
+        position: relative;
         display: inline-flex;
         margin: 0 0 1em;
         box-shadow:  5px 5px 20px #888888;
         border: 1px solid black;
         border-radius: 15px;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .textokinesis{
+        font-size: 1.2em;
+        font-weight: bold;
     }
     .produtos {
         display: inline-flex;
@@ -406,7 +414,12 @@ td{
         width: 100%;
         align-items: center;
     }
-    .peixepersonal li, .textokinesis{
+    .peixepersonal li{
+        padding: 1.5%;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    .textokinesis{
         padding: 1%;
         font-size: 1em;
         font-weight: bold;
@@ -432,7 +445,7 @@ td{
         font-size: 1.5em;
     }
 }
-@media (max-width: 750px){
+@media (max-width: 720px){
     .pps{
         display: flex;
         width: 20%;
@@ -446,7 +459,9 @@ td{
         margin-top: 5%;
         padding: 5%;
     }
-  
+    .peixepersonal li{
+        font-size: 1.1em;
+    }
     .caixa img{
         display: none;
         
@@ -469,7 +484,13 @@ td{
         display: flex;
         
     }
-    .peixepersonal li, .textokinesis{
+    .peixepersonal li{
+        padding: 1%;
+        font-size: 1em;
+        font-weight: bold;
+        align-items: center;
+    }
+    .textokinesis{
         padding: 1%;
         font-size: 0.8em;
         font-weight: bold;
