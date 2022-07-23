@@ -4,9 +4,9 @@
 body{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(240,255,248);
 }
 header{
-    background: linear-gradient(#BBBBBB, #ffffff) ;
     padding: 20px 0;
     background: url("../imagens/logoh.png");
 }
@@ -42,7 +42,7 @@ nav a {
 nav a:hover{
     transform: scale(1.1);
     transition: .2s;
-    background-color: rgb(240, 248, 255);
+    background-color: rgb(240,255,248);
 }
 h1{
     display: flex;
@@ -57,7 +57,7 @@ h1{
     height: 60px;
     text-align: center;
     padding-top: 17px;
-    background: linear-gradient(#b4fc9f, rgb(255, 255, 255)); 
+    background: linear-gradient(#b4fc9f, rgb(240,255,248)); 
     margin: 0 auto;
     font-weight: bold;
     font-size: 2em;
@@ -67,11 +67,15 @@ h1{
     font-family: 'Roboto', sans-serif;
 }
 .peixepersonal {
+    width: 1280px;
     position: relative;
-    display: inline-flex;
+    display:flex;
     align-items: center;
+    justify-content: center;
     max-width: 100%;
-    margin: 0 0 1em;
+    margin: auto;
+    margin-bottom: 2em;
+    background-color: white;
     box-shadow:  5px 5px 20px rgba(0, 0, 0, 0.247);
     border: 1px solid black;
     border-radius: 15px;
@@ -86,17 +90,22 @@ h1{
     position: relative;
     display: flex;
     text-align: justify;
-    font-size: 2.3em;
+    font-size: 2.0em;
     font-weight: bold;
     padding: 2% ;
     margin:0 10px 0 10px ;
     font-family: 'Roboto', sans-serif;
 }
 .kinesisfuncional{
+    width: 1280px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
     max-width: 100%;
-    display: inline-flex;
-    margin: 0 auto;
     box-shadow:  5px 5px 20px rgba(0, 0, 0, 0.247);
+    background-color: white;
     border: 1px solid black;
     border-radius: 15px;
 }
@@ -109,7 +118,7 @@ h1{
     padding: 0 1%;
     width: 40%;
     display: inline-flex;
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
     align-items: center;
     vertical-align: top;
@@ -121,12 +130,42 @@ em strong{
     font-style: italic;
 }
 .beneficios {
-    background: #ffffff;
+    background: rgb(240,255,248);
     font-size: 20px;
     margin: 1% 0;
     border-radius: 15px 15px 0 0;
 }
-.beneficios h2{
+.mapa{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 3em 0;
+    width: 1280px;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 3em 0;
+    width: 1280px;
+}
+.video > iframe{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 3em 0;
+    background-color: #FFF;
+    box-shadow: 1px 1px 5px  rgba(0, 0, 0, 0.459);
+}
+.mapa p{
+    margin: 2em 0;
+    text-align: center;
+}
+.mapa iframe{
+    box-shadow: 1px 1px 5px  rgba(0, 0, 0, 0.459);
+}
+.localizacao, .beneficios h2{
     width: 100%;
     text-align: center;
     padding-top: 17px;
@@ -182,6 +221,7 @@ footer{
     width: 1280px;
     margin: 0 auto;
     padding: 50px 0;
+    
 }
 .produtos h2{
     width: 100%;
@@ -197,6 +237,7 @@ footer{
     font-family: 'Roboto', sans-serif;
 }
 .produtos li{
+    background-color: white;
     display: inline-block;
     text-align: center;
     width: 22%;
@@ -324,6 +365,7 @@ td, .diaTurno{
 }
 td{
     text-align: center;
+    background-color: white;
 }
 @media (max-width: 1400px){
     .peixepersonal li{
