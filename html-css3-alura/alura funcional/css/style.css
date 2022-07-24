@@ -400,7 +400,7 @@ td{
         font-size: 1.5em;
     }
 }
-@media (max-width: 1000px){
+@media (max-width: 1024px){
     .peixepersonal li{
     position: relative;
     display: flex;
@@ -504,7 +504,7 @@ td{
         
     }
 }
-@media (max-width: 620px){
+@media (max-width: 640px){
     .pps{
         display: flex;
         width: 20%;
