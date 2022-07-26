@@ -75,7 +75,7 @@ h1{
     max-width: 100%;
     margin: auto;
     margin-bottom: 2em;
-    background-color: white;
+    background-color: #fefefe;
     box-shadow:  5px 5px 20px rgba(0, 0, 0, 0.247);
     border: 1px solid black;
     border-radius: 15px;
@@ -134,14 +134,17 @@ em strong{
     align-items: center;
     margin: auto;
     padding: 3em 0;
-    width: 1280px;
 }
 .mapa p{
-    margin: 2em 0;
+    padding: 3em 0;
     text-align: center;
 }
 .mapa iframe{
     box-shadow: 1px 1px 5px  rgba(0, 0, 0, 0.459);
+}
+.mapa-conteudo{
+    width: 1280px;
+    margin: 0 auto;
 }
 .localizacao, .beneficios h2{
     width: 100%;
@@ -324,6 +327,7 @@ footer{
 main{
     width: 100%;
     margin: 0 auto;
+    /* background:linear-gradient(#fefefe, #888888); */
 }
 
 form{
