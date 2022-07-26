@@ -129,34 +129,12 @@ em strong{
     font-weight: bold;
     font-style: italic;
 }
-.beneficios {
-    background: rgb(240,255,248);
-    font-size: 20px;
-    margin: 1% 0;
-    border-radius: 15px 15px 0 0;
-}
 .mapa{
     justify-content: center;
     align-items: center;
     margin: auto;
     padding: 3em 0;
     width: 1280px;
-}
-.video{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding: 3em 0;
-    width: 1280px;
-}
-.video > iframe{
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding: 3em 0;
-    background-color: #FFF;
-    box-shadow: 1px 1px 5px  rgba(0, 0, 0, 0.459);
 }
 .mapa p{
     margin: 2em 0;
@@ -176,19 +154,78 @@ em strong{
     font-size: 1.8em;
     color: #000;
 }
-.beneficios ul{
+.beneficios {
+    background: rgb(240,255,248);
+    font-size: 20px;
+    padding: 3em 0;
+    border-radius: 15px 15px 0 0;
+}
+.itens{
+    font-family: 'Roboto', sans-serif;
+    line-height:1.5 ;
+}
+.itens:first-child{
+    font-weight: bold;
+}
+.beneficios h2{
+    text-align: center;
+	font-size: 2em;
+	padding-bottom: 2em;
+}
+.conteudo-beneficios{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 2em;
+}
+.imagem-beneficios{
+    width: 60%;
+}
+.beneficios h3{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-top: 2em;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: crimson;
+    color: #FFF;
+    line-height: 2;
+    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.514);
+}
+
+.post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 3em 0;
+    width: 1280px;
+}
+.post > iframe{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 3em 0;
+    background-color: #FFF;
+    box-shadow: 1px 1px 5px  rgba(0, 0, 0, 0.459);
+}
+/* .beneficios ul{
     padding: 5% 0;
 }
 .beneficios li{
     padding: 5px;
     margin-left: 5%;
     gap:15px
-}
-.itens{
-    font-style: italic;
-    font-family: 'Roboto', sans-serif;
-    padding-left: 5%;
-}
+} */
+
 .box2{
     display: flex;
     justify-content: space-around;
