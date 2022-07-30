@@ -26,11 +26,16 @@ for(var i = 0 ; i < pacientes.length; i++){
 		console.log('peso inválido')
 		pesoValido = false;
 		tdImc.textContent = "Peso inválido!";
+		paciente.classList.add ("paciente-invalido");
 	}
-	if(altura<=0 || altura >= 3.0){
+	if(altura<=0 || altura >= 3){
 		console.log ('Altura inválida')
 		alturaValida = false;
 		tdImc.textContent = "Altura Inválida!"
+		paciente.classList.add ("paciente-invalido");
+
+		// paciente.style.backgroundColor = "red";
+		// paciente.style.color = "white";
 	}
 	if (pesoValido && alturaValida){
 	var imc = peso/(altura*altura)
@@ -38,6 +43,36 @@ for(var i = 0 ; i < pacientes.length; i++){
 	}
 }
 
+var botaoAdicionar = document.querySelector('#adicionar-paciente');
+
+botaoAdicionar.addEventListener('click',function(event){
+
+	event.preventDefault();
+	var form = document.querySelector('#form-adiciona');
+
+	console.log(form.peso.value);
+	console.log(form.altura.value);
+
+
+} );
+
+// botaoAdicionar.addEventListener('click',function(event){
+
+// 	event.preventDefault();
+// 	console.log("Eu sou o botão");
+// } );
+
+// titulo.addEventListener('click', function(){
+// 	alert("Fui clicado via função anônima...")
+// })
+
+// titulo.addEventListener('click', function(){
+// 	alert("Fui clicado via função anônima...")
+// });
+// titulo.addEventListener('click', mostraMensagem);
+// function mostraMensagem(){
+// 	alert('eu fui clicado!')
+//}
 // var tdPeso = paciente.querySelector('.info-peso');
 // var peso = tdPeso.textContent;
 // var tdAltura = paciente.querySelector('.info-altura');
