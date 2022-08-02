@@ -1,10 +1,16 @@
 var botaoAdicionar = document.querySelector('#adicionar-paciente');
+
 botaoAdicionar.addEventListener('click',function(event){
 
 	event.preventDefault();
 	var form = document.querySelector('#form-adiciona');
     var paciente = obterPacientesFormulario(form)
 	var pacienteTr = montaTr(paciente);
+
+	if(!validaPaciente(paciente)){
+		alert('paciente inválido')
+		return
+	}
 
     // var nome = form.nome.value;
 	// var peso = form.peso.value;
@@ -34,7 +40,9 @@ botaoAdicionar.addEventListener('click',function(event){
 	tabela.appendChild(pacienteTr);
 	form.reset();
 
-} );
+} 
+);
+
 function obterPacientesFormulario(form){
     var paciente = {
         nome:form.nome.value,
@@ -68,4 +76,12 @@ function montaTd(dado,classe){
 	td.textContent = dado;
 	td.classList.add(classe);
 	return td;
+}
+
+function validaPaciente(paciente){
+	if(validaPeso(paciente.peso)){
+		return true
+	} else{
+		return false
+	}
 }
