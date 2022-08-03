@@ -45,14 +45,14 @@ for(var i = 0 ; i < pacientes.length; i++){
 }
 
 function validaPeso(peso){
-	if(peso >- 0 && peso < 1000){
+	if(peso >= 0 && peso < 1000){
 		return true
 	} else {
 		return false
 	}
 }
 function validaAltura(altura){
-	if(altura >- 0 && altura < 3){
+	if(altura >= 0 && altura < 3){
 		return true
 	} else {
 		return false
