@@ -1,0 +1,48 @@
+<meta charset="utf-8">
+
+<script>
+	
+	function pulaLinha() {
+		document.write("<br><hr><br>");
+		};
+
+	function mostra(texto) {
+		document.write(texto);
+		pulaLinha();
+	};
+
+	function exibirtitulo(texto) {
+		document.write("<big><big>" + texto + "</big></big><hr>");
+	};
+
+	exibirtitulo ("Joguinho de Adivinhação!");
+
+	var numeroPensado = Math.round(Math.random()*10);
+
+	var tentativas = 1;
+
+	while(tentativas<=3) {
+
+		var chute = parseInt(prompt ("Digite seu chute!"));
+
+		if(chute == numeroPensado) {
+
+			alert("Você acertou!");
+			mostra("O número era " + numeroPensado);
+			break;
+
+		} else {
+
+			alert("Você errou!");
+
+			} if(tentativas == 3){
+
+			mostra("Você errou, o número pensado era " + numeroPensado);
+		}
+
+		tentativas++
+	}
+
+	mostra ("Fim")
+
+</script>

@@ -1,0 +1,59 @@
+<meta charset="utf-8">
+
+<h1> JOGO DA ADIVINHAÇÃO </h1>
+<hr>
+
+<input/>
+
+<button> Compare com o meu segredo </button>
+
+
+<script>
+	
+//	var segredo = 5
+	function gerarNovoSegredo() {
+
+    return Math.round(Math.random() * 10);
+
+  	}
+
+	var segredo = gerarNovoSegredo();
+
+	//var segredo = Math.round(Math.random()*10);
+
+	var input = document.querySelector("input");
+	input.focus();
+
+	document.addEventListener("keypress", function(e) {
+
+  	if(e.key === 'Enter') {
+  
+      var btn = document.querySelector("#Compare");
+    
+    button.click();
+  
+  	}
+	});
+
+	function verifica () {
+		if (input.value == segredo) {
+
+			alert("Você acertou!");
+
+		} else {
+
+			alert("Você errou! O número era " + segredo);
+			
+		}
+		input.value="";
+		input.focus();
+		//location.reload(segredo);
+		segredo=gerarNovoSegredo();
+	}
+
+
+	var button = document.querySelector("button");
+
+	button.onclick = verifica;
+
+</script>

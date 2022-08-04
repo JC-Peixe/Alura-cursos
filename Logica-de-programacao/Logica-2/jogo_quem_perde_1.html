@@ -1,0 +1,82 @@
+<meta charset="utf-8">
+<canvas width="600" height="600"></canvas>
+
+<script>
+    var tela = document.querySelector("canvas");
+    var pincel = tela.getContext("2d");
+    pincel.fillStyle = "orange";
+    pincel.fillRect(0,0,600,600);
+
+    function desenhaTexto(x ,y, texto) {
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    pincel.font='30px Time New Roman';
+    pincel.fillStyle='black';
+    pincel.fillText(texto, x, y);
+    }
+
+    var numero = [];
+
+    var quantidadePessoas = parseInt(prompt("Quantos jogarão?"));
+
+        console.log(quantidadePessoas);
+
+    function numeroAleatorio(){
+        return Math.round(Math.random()*100);
+    }
+
+
+    function jogo(){
+        
+        var contador = 0
+
+        //while (contador <= quantidadePessoas){
+
+            
+
+            var fim = false
+            var menor = 100
+            var eita = 0
+            var menorDeTodos = []
+            
+            for (var cont = 0; cont <= quantidadePessoas; cont++){
+                var numeroRandom = numeroAleatorio();               
+                                       
+                    if (cont > quantidadePessoas.length){
+                        fim = true
+                        alert ("O jogo acabou, o menor número foi...")
+                        document.write("<big><big>"+menorDeTodos)
+                        break;
+                    }
+
+                    if (fim == false){
+                      
+                        alert('o número foi ' + numeroRandom);
+
+                        numero.push(numeroRandom);
+                        cont ++
+                        eita = numeroRandom 
+                    }
+
+                    
+                }
+        
+                console.log(menorDeTodos);
+                console.log(eita);    
+                console.log(numeroRandom);
+                console.log(numero)
+               
+        
+    }
+    
+/*
+    function mostraNumero(){
+        var numeros = numeroAleatorio();
+        alert (numeros)
+    }
+*/
+    tela.onclick = jogo;
+
+    
+    
+</script>

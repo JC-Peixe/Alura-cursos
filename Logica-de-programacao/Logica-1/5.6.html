@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+
+<script>
+	
+	function pulaLinha() {
+		document.write("<br><hr><br>");
+		};
+
+	function exibir(texto) {
+		document.write(texto);
+		pulaLinha();
+	};
+
+	function exibirtitulo(texto) {
+		document.write("<big><big>" + texto + "</big></big><hr>");
+	};
+
+	function calculoImc(peso, altura) {
+		var imc = peso / (altura * altura);
+		
+		return imc
+	};
+	
+
+	var codigo = geraCodigo("A", 20, 30);
+document.write(codigo); // mostrou GH1022
+
+
+</script>

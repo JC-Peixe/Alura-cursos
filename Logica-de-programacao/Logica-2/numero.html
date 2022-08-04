@@ -1,0 +1,44 @@
+<meta charset="utf-8">
+
+<script> 
+
+    function pulaLinha(){
+
+        document.write("<br><br>");
+    }
+
+    function mostra(texto){
+
+        document.write(texto);
+        pulaLinha();
+    }
+
+    function numeroAleatorio(){
+       var numero = Math.round(Math.random()*10);
+       return numero
+    }
+
+    var nome = prompt("Digite seu nome: ");
+
+    var tentativas = 1
+
+    while(tentativas <= 5) {
+        var numero = numeroAleatorio();       
+        var chute = prompt(nome + ", Tente adivinhar o número que estou pensando de 0 a 10");
+
+        if (numero == chute){
+             mostra("Parabéns, " + nome + ", Você acertou!");
+                break;    
+        } else {
+                 alert("Você errou, o número pensado era " + numero);
+        }
+        if(tentativas==5){
+                        mostra("Suas tentativas acabaram!");
+                        break;
+        }
+        tentativas++;
+        
+    }
+
+    
+</script>

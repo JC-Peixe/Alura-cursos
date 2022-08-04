@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+
+<script>
+	
+	function pulaLinha() {
+		document.write("<br><hr><br>")
+		};
+
+	function exibir(texto) {
+		document.write(texto)
+		pulaLinha()
+	};
+	function exibirtitulo(texto) {
+		document.write("<big><big>" + texto + "</big></big><hr>")
+	}
+
+	var chegadaPt = 1500
+	var geracao = 28
+	var anoAtual = 2022
+
+	exibirtitulo("Quantas gerações?");
+
+	exibir("Os portugueses chegaram ao Brasil em 1500. sabem que cada geração se renova em média a cada 28 anos, quantas gerações tivemos de lá até hoje?");
+
+	exibir("Tivemos um total de " + Math.round((2022-1500)/28));
+
+
+
+</script>

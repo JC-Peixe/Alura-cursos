@@ -1,0 +1,75 @@
+<meta charset="utf-8">
+<canvas width="600" height="600"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    var cores = ['blue','red', 'green', 'yellow']
+    var indiceAtualCor = 0
+
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 600, 600);
+
+
+
+    function desenhaCirculo(x, y, raio){
+
+    	pincel.fillStyle= cores[indiceAtualCor];
+    	pincel.beginPath();
+    	pincel.arc(x,y,raio,0,2*Math.PI);
+    	pincel.fill();
+
+    }
+
+    function limparTela(){
+    	pincel.clearRect(0,0,600,600);
+    }
+
+    function localX(){
+    	var local = Math.round(Math.random()*600)
+    	return local
+    }
+    function localY(){
+    	var local = Math.round(Math.random()*600)
+    	return local
+    }
+    
+    function atualizaTela(){
+
+    	var x = localX();
+    	var y = localY();
+    	limparTela();
+
+    	desenhaCirculo (x, y, 10);
+	}
+
+    setInterval(atualizaTela, 800)
+
+    function mudarCor(){
+    	indiceAtualCor++
+    	if (indiceAtualCor>=cores.length) {
+    		indiceAtualCor = 0
+    	}
+    }
+
+    tela.onclick = mudarCor
+
+/*
+    function acertaAlvo(evento){
+    	var x = localX
+    	var y = localX
+
+        if (x >localX - 10 && localX + 10 && localY - 10 && localY+10){
+
+        	alert("você acertou o Alvo!");
+        }
+    }
+
+
+
+    tela.onclick = acertaAlvo
+ */
+ 
+
+</script>

@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+
+<script>
+	
+	function pulaLinha() {
+		document.write("<br><br>");
+		};
+
+	function exibir(texto) {
+		document.write(texto);
+		pulaLinha();
+	};
+
+	function titulo(texto){
+		document.write("<big>" + texto + "</big>")
+		pulaLinha();
+	}
+
+	titulo("Número pares de 1 a 100")
+
+    var numeroPares = 2
+
+    while(numeroPares <= 100) {
+    	exibir(numeroPares);
+    	numeroPares = numeroPares + 2;
+	}
+
+	exibir("Fim!")
+
+</script>

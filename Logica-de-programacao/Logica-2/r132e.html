@@ -1,0 +1,68 @@
+<meta charset="UTF-8">
+
+<h1>Receitas do Yan</h1>
+<br><br>
+<h2>Quantos ingredientes você vai adicionar?  </h2><h3><input type="text" numero="numero" value=""></h3>
+<br><br>
+<h3>Informe o ingrediente e pressione OK</h3>
+<br>
+<input type="text" informe="informe" value="">
+<button>OK</button>
+
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function lista(quantidade) {
+
+        
+        var ingredientes = [""];
+
+        var contador = 1;
+
+        while( contador <= quantidade) {
+
+            var ingredienteLista = lista();
+            var repetido = false;
+
+            for (var posicao = 0; posicao < ingredientes.length ; posicao++) {
+
+                if(ingredientes[posicao] == ingredienteLista ) {
+
+                    repetido = true;
+                    break;
+
+                    alert("ingrediente repetido");
+                }
+            }
+                if (repetido == false) {
+                    ingredientes.push(ingredienteLista);
+                    contador++;
+
+                    mostra(ingredienteLista);
+                    pulaLinha();
+                }
+        }
+
+        return ingredientes;
+        var ingredientes = lista(document.querySelector("numero"));
+        //console.log(ingredientes);
+
+        input.focus();
+        
+    }
+    var button = document.querySelector("button");
+    button.onclick = lista();
+
+
+</script>

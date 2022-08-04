@@ -1,0 +1,61 @@
+<meta charset="utf-8">
+<canvas width="600" height="600"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    var cores = ['blue','red', 'green', 'yellow']
+    var indiceAtualCor = 0
+
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 600, 600);
+
+    var raio = 20
+    var crescimento = 0
+
+    function desenhaCirculo(x, y, raio){
+
+    	pincel.fillStyle= cores[indiceAtualCor];
+    	pincel.beginPath();
+    	pincel.arc(x,y,raio,0,2*Math.PI);
+    	pincel.fill();
+
+    }
+
+    function limparTela(){
+    	pincel.clearRect(0,0,600,600);
+    }
+
+    function atualizaTela(){
+
+    	var x = 300;
+    	var y = 300;
+    	limparTela();
+
+    	desenhaCirculo (x, y, raio);
+        
+        if (raio >= 30){
+            crescimento = -1
+         } else if (raio<= 20){
+            crescimento = 1
+         }
+         raio = raio + crescimento;
+    }
+	
+
+    setInterval(atualizaTela, 20)
+
+    function mudarCor(){
+    	indiceAtualCor++
+    	if (indiceAtualCor>=cores.length) {
+    		indiceAtualCor = 0
+    	}
+    }
+
+    tela.onclick = mudarCor
+
+
+ 
+
+</script>

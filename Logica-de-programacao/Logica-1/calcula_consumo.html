@@ -1,0 +1,48 @@
+<meta charset="utf-8">
+<h3>Álcool ou Gasolina?</h3>
+<script>
+
+	var tanqueDoCarro = 40;
+	var distanciaTotalGasolina = 480;
+	var consumoDeGasolina = distanciaTotalGasolina/tanqueDoCarro;
+
+	document.write("Em uma viagem, Hernan encheu o tanque de Gasolina. o Tanque do seu carro tem a capacidade de 40L. Ao todo seu carro rodou 480km. Qual o consumo do carro quando abastecido com Gasolina? <br>");
+	document.write("<br>" + "O carro de Hernan consegue fazer " + consumoDeGasolina + " km por litro de Gasolina");
+
+	document.write("<br>")
+	document.write("<br>")
+
+	var distanciaTotalAlcool = 300;
+	var consumoDeAlcool = distanciaTotalAlcool/tanqueDoCarro;
+
+	document.write("Na volta, por ter um carro flex, Hernan decidiu colocar Álcool para ver quanto conseguiria percorrer. O carro com o tanque cheio de álcool percorreu 300km. Quando o consumo do carro quando abastecido com álcool?" + "<br>");
+	document.write("<br>" + "O carro de Hernan consegue fazer " + consumoDeAlcool + " km por Litro de álcool");
+
+	var litroAlcool = 5.00;
+	var litroGasolina = 7.10;
+
+	document.write("<br>");
+	document.write("<br>");
+
+ 	document.write("Sabendo que o Litro do álcool está custando " + litroAlcool + " reais e o litro da gasolina está custando " + litroGasolina + " reais, com qual combustível é mais vantajoso abastecer");
+
+ 	var gastoGasolina = tanqueDoCarro*litroGasolina;
+ 	var gastoAlcool = tanqueDoCarro*litroAlcool;
+ 	var percursoRestanteAlcool = distanciaTotalGasolina - distanciaTotalAlcool;
+
+ 	document.write("<br>")
+ 	document.write("<br>")
+
+ 	document.write("O gasto total com a gasolina foi de " + gastoGasolina + " Reais e ele andou 480km. " +"<br>");
+ 	document.write("Já o gasto total com álcool foi de " + gastoAlcool + " reais e ele andou 300km, faltando " + percursoRestanteAlcool + " km para ele retornar" + "<br>");
+
+ 	var alcoolRestante = percursoRestanteAlcool/consumoDeAlcool;
+ 	var alcoolTotal = (alcoolRestante+tanqueDoCarro)*litroAlcool;
+
+ 	document.write("<br>" + "Se Hernan abastecer os " + percursoRestanteAlcool + "km restante com álcool, ele terá que colocar mais " + alcoolRestante + " litros de álcool, e isso fará seu gasto total ser de " + alcoolTotal + " reais,");
+ 	var economia = alcoolTotal - gastoGasolina;
+	document.write("<br>");
+
+	document.write("<br>" + "Logo, será mais vantajoso nas proximas viagem com essa distância, Hernan abastecer seu carro apenas com álcool, assim ele economizará " + economia + " reais!" );
+
+</script>

@@ -1,0 +1,51 @@
+<meta charset="utf-8">
+<canvas width="800" height="600"></canvas>
+
+<script> 
+var tela = document.querySelector('canvas');
+var pincel = tela.getContext('2d');
+
+    function desenhaQuadrado(x, y, cor){
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = cor;
+        pincel.fillRect(x, y, 50, 50);
+        pincel.strokeStyle = "black";
+        pincel.strokeRect(x, y, 50, 50);
+    }
+    
+    function desenhaLinha(x, y, cor){
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.strokeStyle = cor;
+        pincel.strokeRect(x, y, 50, 50);
+    }
+
+    function pulaLinha (){
+        document.write("<br><br>")
+    }
+    function mostra (texto){
+        document.write(texto);
+    }
+
+    var linha = prompt("Escolha um número 0 a 10");
+    var fracao = prompt("Escolha um segundo número menor ou igual ao escolhido anteriormente");
+    var x = 0
+    var l = 0
+
+    
+    for (var c = 1; c <= fracao; c++){
+        desenhaQuadrado (x, 0, 'darkgreen');
+        x = x + 50
+    }
+    for(var y = 1; y <= linha; y++){
+        
+        desenhaLinha (l, 0, 'black')
+        l = l + 50
+    }
+    
+    mostra ("<big>Que fração é essa?</big>")
+    
+</script>

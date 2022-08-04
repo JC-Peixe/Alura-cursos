@@ -1,0 +1,23 @@
+Criar um site app :
+
+Quem perde?
+
+
+Objetivo do site:
+
+Um jogo onde possa escolher quantidade de pessoas que vão jogar...
+
+Após escolher a quantidade de pessoas o jogo começa de forma simples...
+
+O sistema vai gerar número aleatórios com o clique, número de 0 a 100...
+
+Escolher modo de competição, número mais alto ou número mais Baixo...
+
+se cair múltiplos de 10 (10 a 90) a pessoa estará automaticamente salva e aparecerá na tela, "Você está salva!";
+
+se cair 0, a pessoa que tirou o número recebe punição dobrada e todos pagam também, rodada se encerrar automaticamente;
+
+se cair 100, a pessoa que tirou estará salva e todos os outros, rodada se encerra automaticamente após o clique;
+
+no final de todos os jogadores, o sistema anunciará o perdedor da rodada e perguntará se vai manter mesma quantidade de jogadores ou se vai mudar.
+

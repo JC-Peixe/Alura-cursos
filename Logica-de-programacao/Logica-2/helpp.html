@@ -1,0 +1,67 @@
+<canvas width="600" height="400"></canvas>
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+
+    function desenhaQuadrado(x, y) {
+        pincel.fillStyle = 'green';
+        pincel.fillRect(x, y, 50, 50);
+    }
+
+    function desenhaBorda(x, y) {
+        pincel.strokeStyle = 'black';
+        pincel.strokeRect(x, y, 50, 50);
+    }
+
+    function desenhaTexto(texto, x ,y) {
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    pincel.font='50px Time New Roman';
+    pincel.fillStyle='black';
+    pincel.fillText(texto, x, y);
+    }
+
+    desenhaTexto("Qual é a Fração?", 150,300);
+    
+    function desenhaFracao (numerador,denominador) {
+        var deslocamentoDoQuadrado = 0;
+        var contador = 1;
+        
+
+        
+        while(contador <= numerador) {
+            desenhaQuadrado(0 + deslocamentoDoQuadrado, 0);
+            deslocamentoDoQuadrado = deslocamentoDoQuadrado + 50;
+            contador++;
+        }
+
+        var deslocamentoDaBorda = 0;
+        var contador2 = 1;
+        var positivo = false
+
+        while(contador2 <= denominador) {
+            
+            if(denominador < numerador){
+
+                positivo = true
+                alert("O denominador não pode ser menor que o numerador...");
+                location.reload();
+                break;
+                
+
+            } 
+             if(positivo == false){
+                desenhaBorda(0 + deslocamentoDaBorda, 0);
+                deslocamentoDaBorda = deslocamentoDaBorda + 50;
+                contador2++;
+            }
+
+        }
+    }
+
+    var numerador = parseInt(prompt("Insira o numerador"));
+    var denominador = parseInt(prompt("Insira o denominador"));
+
+    desenhaFracao(numerador, denominador);
+</script>

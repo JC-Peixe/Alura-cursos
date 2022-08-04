@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<canvas width="800" height="600"></canvas>
+
+<script> 
+var tela = document.querySelector('canvas');
+var pincel = tela.getContext('2d');
+
+    function desenhaQuadrado(x, y, cor){
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = cor;
+        pincel.fillRect(x, y, 50, 50);
+        pincel.strokeStyle = "black";
+        pincel.strokeRect(x, y, 50, 50);
+    }
+    
+    function desenhaLinha(x, y, cor){
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.strokeStyle = cor;
+        pincel.strokeRect(x, y, 50, 50);
+    }
+
+    function pulaLinha (){
+        document.write("<br><br>")
+    }
+    function mostra (texto){
+        document.write(texto);
+    }
+
+
+    
+</script>

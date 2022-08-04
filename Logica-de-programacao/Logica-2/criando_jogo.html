@@ -1,0 +1,73 @@
+<meta charset="utf-8">
+<canvas width="600" height="600"></canvas>
+
+<script>
+    var tela = document.querySelector("canvas");
+    var pincel = tela.getContext("2d");
+    pincel.fillStyle = "orange";
+    pincel.fillRect(0,0,600,600);
+
+    function desenhaTexto(x ,y, texto) {
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    pincel.font='30px Time New Roman';
+    pincel.fillStyle='black';
+    pincel.fillText(texto, x, y);
+    }
+
+    var numeros = [];
+
+    var quantidadePessoas = [parseInt(prompt("Quantos jogarão?"))];
+
+        console.log(quantidadePessoas);
+
+    function numeroAleatorio(){
+        return Math.round(Math.random()*100);
+    }
+
+    var jogadores = quantidadePessoas;
+    var contador = 1;
+
+    function multiplo10(){
+        var multiplo = []
+        var mult = 0
+        for (var cont = 1; cont <= 10; cont = cont + 1){
+            
+            if (cont < 10){
+            mult = cont*10
+            multiplo.push(mult)
+            }
+        }
+        return multiplo
+    }
+    console.log(multiplo10)
+    function jogo (){
+        var jogadorNumero = [];
+        var numero = numeroAleatorio();
+        var cont = 0
+
+        while (cont <= jogadores){
+
+
+
+        for (var contador = 0; contador <= quantidadePessoas.length; contador++){
+
+                numeros.push(numero)
+                alert("O número foi " + numero);
+                console.log(numero)
+
+            if (contador > quantidadePessoas){
+                alert ("Todos os número já foram informados.")
+                break;
+            }
+        }
+
+    cont++
+    }
+}
+
+    tela.onclick = jogo;
+
+    
+    
+</script>

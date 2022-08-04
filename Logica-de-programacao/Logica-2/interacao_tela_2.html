@@ -1,0 +1,110 @@
+<meta charset="utf-8">
+<canvas width="800" height="800"></canvas>
+
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    
+    pincel.fillStyle = "lightgrey";
+    pincel.fillRect(0, 0, 800, 800);
+    pincel.strokeStyle = 'black'
+    pincel.strokeRect(0, 0, 800, 800);
+
+/*
+
+    function cor(cor){
+    var cor = prompt("Qual cor você deseja pintar? em inglês");
+    return cor;
+    }
+
+    function exibirBola(evento){
+        var cor = prompt("Qual cor você deseja pintar? em inglês")
+        
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+        var x = evento.pageX - tela.offsetLeft;
+        var y = evento.pageY - tela.offsetTop;
+      
+        pincel.fillStyle = cor();
+        pincel.beginPath();
+        pincel.arc(x, y, 10, 0, 2*3.14);
+        pincel.fill();
+
+        
+    };
+    
+    function exibirTri(evento){
+        var cor = prompt("Qual cor você deseja pintar? em inglês")
+        var x = evento.pageX - tela.offsetLeft;
+        var y = evento.pageY - tela.offsetTop;
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+      
+        pincel.fillStyle = cor();
+        pincel.beginPath();
+        pincel.moveTo(x, y);
+        pincel.lineTo(x-10, y+10);
+        pincel.lineTo(x+10, y+10);
+        pincel.fill();
+
+        
+    };
+
+    function exibirQd(evento){
+        var cor = prompt("Qual cor você deseja pintar? em inglês")
+
+        var x = evento.pageX - tela.offsetLeft;
+        var y = evento.pageY - tela.offsetTop;
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+      
+        pincel.fillStyle = cor();
+        pincel.fillRect(x, y, 10, 10);
+        pincel.fill();
+
+        
+    };
+*/
+
+    function exibir(evento){
+        var item = parseInt(prompt ("1 = Bola | 2 = Triângulo | 3 = Quadrado "));
+
+        if (item == 1){
+            var x = evento.pageX - tela.offsetLeft;
+            var y = evento.pageY - tela.offsetTop;
+            var cor = prompt("Qual cor você deseja pintar? em inglês");
+            pincel.fillStyle = cor;
+            pincel.beginPath();
+            pincel.arc(x, y, 10, 0, 2*3.14);
+            pincel.fill();
+        
+        }if (item == 2){
+                    var x = evento.pageX - tela.offsetLeft;
+                    var y = evento.pageY - tela.offsetTop;
+                    var cor = prompt("Qual cor você deseja pintar? em inglês");
+                    pincel.fillStyle = cor;
+                    pincel.beginPath();
+                    pincel.moveTo(x, y);
+                    pincel.lineTo(x-10, y+10);
+                    pincel.lineTo(x+10, y+10);
+                    pincel.fill();
+        } 
+        if (item == 3){
+                        var x = evento.pageX - tela.offsetLeft;
+                        var y = evento.pageY - tela.offsetTop;
+                        var cor = prompt("Qual cor você deseja pintar? em inglês");
+                        pincel.fillStyle = cor;
+                        pincel.fillRect(x, y, 10, 10);
+                        pincel.fill();
+        }
+        if (item != 1 && item != 2 && item != 3){
+        
+                    alert("Opção inválida!")
+        }
+    }
+    
+          
+    tela.onclick = exibir;
+
+
+</script>

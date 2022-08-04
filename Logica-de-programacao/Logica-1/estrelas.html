@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+
+<script>
+	
+	function pulaLinha() {
+		document.write("<br><br>");
+		};
+
+	function mostra(texto) {
+		document.write(texto);
+		pulaLinha();
+	};
+
+	function exibirtitulo(texto) {
+		document.write("<big><big>" + texto + "</big></big><hr>");
+	};
+
+	exibirtitulo ("Estrela");
+
+	for (var linha=1; linha <=3; linha++){
+
+		for(var coluna = 1; coluna <=10; coluna++){
+		
+		document.write("*");
+
+		}
+		pulaLinha()
+	}
+	mostra ("Fim")
+
+
+</script>
