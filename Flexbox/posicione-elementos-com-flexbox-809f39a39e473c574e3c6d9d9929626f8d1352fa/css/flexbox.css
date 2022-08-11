@@ -95,4 +95,30 @@
     .cabecalhoPrincipal-nav-link-app{
         order: -1;
     }
+    .videoSobre .container{
+      flex-direction: column;
+    }
+  .videoSobre-video{
+    margin: 0 auto;
+  }
+}
+.videoSobre .container{
+  display: flex;
+
+}
+.videoSobre-sobre{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-grow: 1;
+  margin-left: 1.5em;
+
+}
+.videoSobre-video{
+  flex-grow: 2;
+  flex-shrink: 2;
+  
+}
+.videoSobre-sobre-list{
+  flex-grow: 1;
 }
