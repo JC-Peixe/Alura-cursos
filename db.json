@@ -2,84 +2,84 @@
     "pruduto": [
       {
         "nome": "Luffy",
-        "imageUrl": "./assets/img/luffy1.png",
+        "imageUrl": "https://github.com/JC-Peixe/Alura-cursos/blob/main/imagens-alura-geek/luffy1.png",
         "price": "R$125.00",
         "section": "Luffy",
         "id": 1
       },
       {
         "nome": "Boba Fett",
-        "imageUrl": "./assets/img/luffy1.png",
+        "imageUrl": "https://github.com/JC-Peixe/Alura-cursos/blob/main/imagens-alura-geek/luffy1.png",
         "price": "R$125.00",
         "section": "StarWars",
         "id": 2
       },
       {
         "nome": "Boba Fett",
-        "imageUrl": "./assets/img/luffy1.png",
+        "imageUrl": "https://github.com/JC-Peixe/Alura-cursos/blob/main/imagens-alura-geek/luffy1.png",
         "price": "R$140.00",
         "section": "StarWars",
         "id": 3
       },
       {
         "nome": "Boba Fett",
-        "imageUrl": "./assets/img/luffy1.png",
+        "imageUrl": "https://github.com/JC-Peixe/Alura-cursos/blob/main/imagens-alura-geek/luffy1.png",
         "price": "R$140.00",
         "section": "StarWars",
         "id": 4
       },
       {
         "nome": "Xbox 360 Slim",
-        "imageUrl": "./assets/img/luffy1.png",
+        "imageUrl": "https://github.com/JC-Peixe/Alura-cursos/blob/main/imagens-alura-geek/luffy1.png",
         "price": "R$1.648.00",
         "section": "Consoles",
         "id": 5
       },
       {
         "nome": "PlayStation 4",
-        "imageUrl": "./assets/img/luffy1.png",
+        "imageUrl": "https://github.com/JC-Peixe/Alura-cursos/blob/main/imagens-alura-geek/luffy1.png",
         "price": "R$1.648.00",
         "section": "Consoles",
         "id": 6
       },
       {
         "nome": "Xbox One",
-        "imageUrl": "./assets/img/luffy1.png",
+        "imageUrl": "https://github.com/JC-Peixe/Alura-cursos/blob/main/imagens-alura-geek/luffy1.png",
         "price": "R$1.648.00",
         "section": "Consoles",
         "id": 7
       },
       {
         "nome": "PlayStation 5",
-        "imageUrl": "./assets/img/luffy1.png",
+        "imageUrl": "https://github.com/JC-Peixe/Alura-cursos/blob/main/imagens-alura-geek/luffy1.png",
         "price": "R$1.648.00",
         "section": "Consoles",
         "id": 8
       },
       {
         "nome": "DualShock 4 Star Wars",
-        "imageUrl": "./assets/img/luffy1.png",
+        "imageUrl": "https://github.com/JC-Peixe/Alura-cursos/blob/main/imagens-alura-geek/luffy1.png",
         "price": "R$580.00",
         "section": "Diversos",
         "id": 9
       },
       {
         "nome": "Controle Razer Star Wars",
-        "imageUrl": "./assets/img/luffy1.png",
+        "imageUrl": "https://github.com/JC-Peixe/Alura-cursos/blob/main/imagens-alura-geek/luffy1.png",
         "price": "R$935.00",
         "section": "Diversos",
         "id": 10
       },
       {
         "nome": "Controle PS5 Original Sony",
-        "imageUrl": "./assets/img/luffy1.png",
+        "imageUrl": "https://github.com/JC-Peixe/Alura-cursos/blob/main/imagens-alura-geek/luffy1.png",
         "price": "R$799.00",
         "section": "Diversos",
         "id": 11
       },
       {
         "nome": "Jogos PS4 Star Wars",
-        "imageUrl": "./assets/img/luffy1.png",
+        "imageUrl": "https://github.com/JC-Peixe/Alura-cursos/blob/main/imagens-alura-geek/luffy1.png",
         "price": "R$190.00",
         "section": "Diversos",
         "id": 12
