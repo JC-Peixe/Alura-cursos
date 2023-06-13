@@ -32,28 +32,28 @@
         "nome": "Zoro Estilo 3 Espadas",
         "imageUrl": "./assets/img/ZoroSantoriu.png",
         "price": "R$248.00",
-        "section": "Tripulação",
+        "section": "Tripulacao",
         "id": 5
       },
       {
         "nome": "Sanji Perna Preta",
         "imageUrl": "./assets/img/sanji.png",
         "price": "R$247.00",
-        "section": "Tripulação",
+        "section": "Tripulacao",
         "id": 6
       },
       {
         "nome": "Zoro vs Sanji",
         "imageUrl": "./assets/img/zoroXSanji.png",
         "price": "R$350.00",
-        "section": "Tripulação",
+        "section": "Tripulacao",
         "id": 7
       },
       {
         "nome": "Zoro",
         "imageUrl": "./assets/img/zoro1.png",
         "price": "R$148.00",
-        "section": "Tripulação",
+        "section": "Tripulacao",
         "id": 8
       },
       {
