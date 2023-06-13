@@ -9,21 +9,21 @@
       },
       {
         "nome": "Luffy e Shanks Passando o Chapéu de Palha",
-        "imageUrl": "./assets/img/luffyEShanks.png",
+        "imageUrl": "./assets/img/LuffyEShanks.png",
         "price": "R$250.00",
         "section": "Luffy",
         "id": 2
       },
       {
         "nome": "Luffy Gear4",
-        "imageUrl": "./assets/img/luffyGear4.png",
+        "imageUrl": "./assets/img/LuffyGear4.png",
         "price": "R$250.00",
         "section": "Luffy",
         "id": 3
       },
       {
         "nome": "Luffy Wano",
-        "imageUrl": "./assets/img/luffyWano.png",
+        "imageUrl": "./assets/img/LuffyWano.png",
         "price": "R$250.00",
         "section": "Luffy",
         "id": 4
